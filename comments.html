@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <title>ZETXION | Comments</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">ZETXION<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="gallery.html">Gallery</a><a href="about.html">About</a><a class="active" href="comments.html">Comments</a>
+    </nav>
+  </header>
+  <main class="container page-main">
+    <p class="eyebrow">04 / YOUR FEEDBACK</p>
+    <h1 class="page-title">Leave a <span>comment.</span></h1>
+    <p class="lead">What did you think of my school project? Try the demo form below.</p>
+    <div class="form-layout">
+      <section class="about-panel">
+        <p class="eyebrow">DEMO FORM</p>
+        <h2>Share your thoughts.</h2>
+        <p class="body-copy">This form demonstrates HTML form fields and basic JavaScript validation. It shows a preview of your message on this page, but it does not send or permanently store comments.</p>
+        <form id="comment-form">
+          <label for="visitor-name">Your name</label>
+          <input id="visitor-name" name="name" type="text" maxlength="50" placeholder="Enter a name" required>
+          <label for="visitor-comment">Your comment</label>
+          <textarea id="visitor-comment" name="comment" rows="5" maxlength="500" placeholder="Write helpful feedback..." required></textarea>
+          <button class="button button-gold" type="submit">Preview comment ↗</button>
+        </form>
+        <div id="form-result" class="form-result" role="status" aria-live="polite"></div>
+      </section>
+      <aside class="side-note">
+        <p class="eyebrow">PLEASE NOTE</p>
+        <h3>School demonstration</h3>
+        <p>This is a front-end-only demo. When you refresh the page, the preview disappears. A real public comments system needs a secure backend or form service.</p>
+      </aside>
+    </div>
+    <a class="button button-outline" href="index.html">← Back to home</a>
+  </main>
+  <footer class="site-footer"><span>© <span class="year"></span> ZETXION.</span><span>Comments · Demo only</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
